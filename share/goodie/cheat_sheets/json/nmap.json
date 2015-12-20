@@ -1,18 +1,17 @@
 {
     "id": "nmap_cheat_sheet",
-    "name": "nmap",
-    "description": "Nmap Security Scanner",
+    "name": "Nmap",
+    "description": "Quick reference for Nmap Security Scanner",
     "metadata": {
-        "sourceName": "nmap cookbook",
+        "sourceName": "Nmap Cookbook",
         "sourceUrl": "http://nmapcookbook.blogspot.com.br/2010/02/nmap-cheat-sheet.html"
     },
     "template_type": "terminal",
     "section_order": [
         "Basic Scanning Techniques",
         "Discovery Options",
-        "Advanced Scanning Options",
+        "Advanced Scanning Functions",
         "Port Scanning Options",
-        "Version Detection",
         "Timing Options",
         "Firewall Evasion Techniques",
         "Output Options",
@@ -54,10 +53,10 @@
         }],
         "Discovery Options": [{
             "val": "Perform a ping-only scan",
-            "key": "nmap -sP \\[target\\]"
+            "key": "nmap -sn \\[target\\]"
         }, {
             "val": "Don't ping",
-            "key": "nmap -PN \\[target\\]"
+            "key": "nmap -Pn \\[target\\]"
         }, {
             "val": "TCP SYN ping",
             "key": "nmap -PS \\[target\\]"
@@ -314,13 +313,13 @@
         }],
         "Ndiff": [{
             "val": "Comparison using Ndiff",
-            "key": "$ ndiff \\[scan1.xml\\] \\[scan2.xml\\]"
+            "key": "ndiff \\[scan1.xml\\] \\[scan2.xml\\]"
         }, {
             "val": "Ndiff verbose mode",
-            "key": "$ ndiff -v \\[scan1.xml\\] \\[scan2.xml\\]"
+            "key": "ndiff -v \\[scan1.xml\\] \\[scan2.xml\\]"
         }, {
             "val": "XML output mode",
-            "key": "$ ndiff --xml \\[scan1.xml\\] \\[scan2.xml\\]"
+            "key": "ndiff --xml \\[scan1.xml\\] \\[scan2.xml\\]"
         }]
     }
 }
